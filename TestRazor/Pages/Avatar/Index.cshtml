@@ -1,0 +1,15 @@
+﻿@page "{id}"
+
+@functions
+    {
+    public string AvatarId { get; set; }
+
+    public IActionResult OnGet(string id)
+    {
+        AvatarId = id;
+        return Page();
+    }
+    }
+
+<h1>Avatar page for @AvatarId</h1>
+<img src="@Url.Content("~/api/avatar/" + AvatarId)" height="220">
