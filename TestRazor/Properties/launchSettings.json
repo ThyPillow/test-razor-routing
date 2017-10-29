@@ -15,6 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
+    "TestRazor": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
